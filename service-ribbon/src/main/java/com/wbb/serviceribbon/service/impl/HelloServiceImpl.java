@@ -19,6 +19,6 @@ public class HelloServiceImpl implements HelloService {
     }
 
     public String error(String name){
-        return "sorry "+ name +",error";
+        return "sorry "+ name +",ribbon error";
     }
 }

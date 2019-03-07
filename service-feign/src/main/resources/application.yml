@@ -11,4 +11,4 @@ eureka:
 
 feign:
   hystrix:
-    enabled: true //feign自带hystrix,默认关闭
+    enabled: true

@@ -13,6 +13,7 @@
         <module>eurekaclient</module>
         <module>service-ribbon</module>
         <module>service-feign</module>
+        <module>zuul</module>
     </modules>
 
     <parent>

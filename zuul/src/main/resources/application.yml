@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: zuul
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka
+zuul:
+  routes:
+    serviceA:
+      path: /api-a/**
+      serviceId: service-ribbon
+      stripPrefix: true   #默认true,去除前缀
+    serviceB:
+      path: /api-b/**
+      serviceId: service-feign
+      stripPrefix: true
+server:
+  port: 9082
+
+ribbon:
+  ReadTimeout: 60000    #设置超时时间,使断路器生效
+  ConnectTimeout: 60000

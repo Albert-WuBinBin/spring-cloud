@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 public class HelloServiceHystrix implements  HelloService{
     @Override
     public String sayHello(String name) {
-        return "sorry "+ name +",error";
+        return "sorry "+ name +",feign error";
     }
 }
